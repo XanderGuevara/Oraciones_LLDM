@@ -1,0 +1,119 @@
+:root {
+    --primary: #0f172a;
+    --accent: #1d4ed8;
+    --bg: #f1f5f9;
+    --surface: #ffffff;
+    --text: #1e293b;
+    --muted: #64748b;
+    --live: #dc2626;
+    --upcoming: #d97706;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--surface);
+    text-align: center;
+    padding: 2.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+main {
+    width: 100%;
+    max-width: 620px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--surface);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-top: 6px solid var(--muted);
+    transition: border-color 0.3s ease;
+}
+
+.card.live {
+    border-top-color: var(--live);
+}
+
+.card.upcoming {
+    border-top-color: var(--upcoming);
+}
+
+.btn-live {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--live);
+    color: var(--surface);
+    padding: 0.9rem 1.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 10px rgba(220, 38, 38, 0.3);
+    transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.btn-live:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+}
+
+.schedule-info {
+    background-color: var(--surface);
+    padding: 1.75rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.schedule-info h3 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--bg);
+    padding-bottom: 0.5rem;
+}
+
+.schedule-info ul {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.875rem;
+    color: var(--muted);
+}
