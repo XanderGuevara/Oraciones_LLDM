@@ -1,5 +1,5 @@
 // PEGA AQUÍ LA URL TERMINADA EN /exec QUE OBTENDRÁS EN TU GOOGLE SHEETS (Extensiones > Apps Script > Implementar)
-const API_URL = "https://script.google.com/macros/s/AKfycbwF4AkvPtoTwvWzpF93VYLLKmilPRv8Mq5QpjgBZ_adV_zO0XWqtwJ0yez6gNj4wkaaJg/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbw27VqiOWqP9NCfHHvTahqkLH20NttQ3YhZ6cjuotbsaEv35r6cw11NJ4H6ldHivqNLLQ/exec";
 
 function obtenerHoraSalvador() {
     const opciones = {
